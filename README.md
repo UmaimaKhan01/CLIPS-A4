@@ -56,26 +56,6 @@ I fine-tuned three vision–language models on the same HAR dataset split:
 - **A-CLIP** improves slightly over CLIP, especially in later epochs, but gains are modest.
 - **CLIP** remains a strong baseline with fast training but limited fine-grained accuracy.
 
----
-
-##  Repository Structure
-├── models/
-│ ├── train_clip.py # CLIP training script
-│ ├── train_aclip_mask.py # A-CLIP training script
-│ ├── train_siglip.py # SigLIP training script
-├── utils/
-│ ├── config.py # Shared configs
-│ ├── har_data.py # Data loading
-│ ├── train_utils.py # Training/eval loops
-│ └── mask_utils.py # A-CLIP masking functions
-├── runs/ # Logs, metrics, best checkpoints
-└── README.md
-
-yaml
-Copy code
-
----
-
 ##  How to Run
 ```bash
 # Clone repo
